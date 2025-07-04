@@ -49,7 +49,7 @@ class BuscarColetivosTool:
     BASE_URL = os.getenv("RAE_API_URL", "https://raeconsultascoletivo.sp.sebrae.com.br/api/BuscarColetivos")
     HEADERS = {
         "accept": "text/plain",
-        "hash": os.getenv("RAE_API_HASH", "4BDF114F-1A84-47DC-9640-BAF7C763CF9D")
+        "hash": os.getenv("RAE_API_HASH")
     }
     
     TIMEOUT = float(os.getenv("RAE_API_TIMEOUT", "10.0"))
